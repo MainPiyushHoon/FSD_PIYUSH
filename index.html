@@ -3,80 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
+    <title>Website | Home</title>
 </head>
 <body>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        #bg-video {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            min-width: 100vw;
-            min-height: 70vh;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            object-fit: fill;
-        }
-    </style>
-    <video id="bg-video" autoplay muted loop playsinline>
-        <source src="subs/media/jett.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div>
+        <table border="1" style="width: 100%; margin-top: auto; text-align: center;"> 
+            <tr>
+                <th><a href="" style="font-size: 1.1em;">Home</a></th>
+                <th><a href="subs/catalogue.html" target="home" style="font-size: 1.1em;">Book Store</a></th>
+                <th><a href="subs/tcs.html" target="home" style="font-size: 1.1em;">TCS CodeVita</a></th>
+            </tr>
+        </table>
+    </div>
+    <iframe name = "home" id="content" src="subs/submit.html" width="100%" height="1000px" style="border: none;"></iframe>
     
-    <h1><center>Landing Page</center></h1>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-        <a href="https://google.com" style="font-size: 1.1em;">Home</a>
-        <a href="subs/website.html" style="font-size: 1.1em;">Website</a>
-        <a href="https://github.com/MainPiyushHoon" style="font-size: 1.1em;">About Me</a>
-    </div><hr>
+
+
+
+    <!-- How to get the reference of a link to another part on the page -->
     
-    <h2><center>A Simple Form</center></h2>
-    <form action="subs/submit.html" method="get" style="max-width: 400px; margin: 0 auto; background: transparent;">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="Male" required>
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="Other">
-        <label for="other">Other</label><br><br>
-
-        <label for="age">Age:</label><br>
-        <input type="integer" id="age" name="age" min="1" required><br><br>
-
-        <label for="class">Course:</label><br>
-        <input type="text" id="class" name="class" required><br><br>
-
-        <label for="branch">Branch:</label><br>
-        <select id="branch" name="branch" required>
-            <option value="">Select Branch</option>
-            <option value="CSE">CSE</option>
-            <option value="ECE">ELCE</option>
-            <option value="ME">ME</option>
-            <option value="CE">ECE</option>
-            <option value="EEE">CE</option>
-        </select><br><br>
-
-        <label for="section">Section:</label><br>
-        <select type="text" id="section" name="section" required>
-            <option value="">Select Section</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-        </select><br><br>    
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <input type="submit" value="Submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
-
-    </form>
+</body>
 </html>
